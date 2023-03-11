@@ -106,5 +106,7 @@ flex-wrap: wrap;
   .card{
     width: 100%;
   }
+
+  .about{margin: 0 auto;}
 }
 
