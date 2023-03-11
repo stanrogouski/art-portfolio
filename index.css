@@ -3,17 +3,18 @@ body {
 }
 
 h1 {
-  display: inline-block;
+
   font-weight: 300;
   margin: 0 32px 0 0;
 }
 
-.links {
-  display: inline-block;
+.links ul {
+
+
 }
 
 .links li {
-  display: inline-block;
+
 }
 
 .links a {
@@ -25,9 +26,17 @@ h1 {
 
 .links ul {
   padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+
 }
 .navbar {
   margin: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
 }
 
 a.active {
@@ -36,11 +45,15 @@ a.active {
 
 .gallery {
   padding: 16px;
+ display: flex;
+flex-basis: 33%;
+flex-wrap: wrap;
+
 }
 
 .card {
   width: 49.75%;
-  display: inline-block;
+
   box-sizing: border-box;
   padding: 16px;
 }
@@ -54,7 +67,7 @@ a.active {
 }
 
 .card h2 {
-  display: inline-block;
+
   margin: 8px 0 16px 0;
   font-weight: 300;
 }
@@ -80,8 +93,18 @@ a.active {
 
 .cta {
   border-bottom: 1px solid black;
-  display: inline-block;
+
   padding-bottom: 8px;
   margin-top: 0;
+}
+
+@media(max-width: 1000px){
+  .gallery{
+    display: inline-block;
+  }
+
+  .card{
+    width: 100%;
+  }
 }
 
